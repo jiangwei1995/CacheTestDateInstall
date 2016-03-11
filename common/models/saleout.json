@@ -1,0 +1,148 @@
+{
+  "name": "saleout",
+  "base": "PersistedModel",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "edt_cache",
+      "table": "saleout"
+    }
+  },
+  "properties": {
+    "saleId": {
+      "type": "String",
+      "required": true,
+      "length": 36,
+      "precision": null,
+      "scale": null,
+      "id": 1,
+      "mysql": {
+        "columnName": "saleId",
+        "dataType": "char",
+        "dataLength": 36,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "saleCode": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "id": 1,
+      "mysql": {
+        "columnName": "saleCode",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "saleType": {
+      "type": "number",
+       "mysql": {
+        "columnName": "saleType",
+        "dataType": "int",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "userId": {
+      "type": "string",
+       "mysql": {
+        "columnName": "userId",
+        "dataType": "char",
+        "dataLength": 36,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "quantity": {
+      "type": "number",
+       "mysql": {
+        "columnName": "quantity",
+        "dataType": "int",
+        "dataLength": 11,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "wareHouseId": {
+      "type": "string",
+      "mysql": {
+        "columnName": "wareHouseId",
+        "dataType": "char",
+        "dataLength": 36,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "money": {
+      "type": "number",
+      "mysql": {
+        "columnName": "money",
+        "dataType": "decimal",
+        "dataLength": 8,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "discount": {
+      "type": "number",
+      "mysql": {
+        "columnName": "discount",
+        "dataType": "decimal",
+        "dataLength": 8,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "note": {
+      "type": "string",
+      "mysql": {
+        "columnName": "note",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "makeDate": {
+      "type": "string",
+      "mysql": {
+        "columnName": "makeDate",
+        "dataType": "char",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "init": {
+      "isStatic": true,
+      "returns": {
+        "arg": "data",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}

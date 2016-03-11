@@ -1,0 +1,77 @@
+{
+  "name": "wareHouse",
+  "base": "PersistedModel", 
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "edt_cache",
+      "table": "ware_house"
+    }
+  },
+  "properties": {
+    "wareHouseId": {
+      "type": "String",
+      "id": 1,
+      "required": true,
+      "length": 36,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "wareHouseId",
+        "dataType": "varchar",
+        "dataLength": 36,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "note": {
+      "type": "string",
+      "mysql": {
+        "columnName": "note",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "wareHouseCode": {
+      "type": "string",
+      "mysql": {
+        "columnName": "wareHouseCode",
+        "dataType": "varchar",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "wareHouseName": {
+      "type": "string",
+      "mysql": {
+        "columnName": "wareHouseName",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "address": {
+      "type": "string",
+      "mysql": {
+        "columnName": "address",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,110 @@
+{
+  "name": "user1",
+  "base": "PersistedModel",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "edt_cache",
+      "table": "user"
+    }
+  },
+  "properties": {
+    "userId": {
+      "type": "string",
+      "id": 1,
+      "required": true,
+      "length": 36,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "userId",
+        "dataType": "char",
+        "dataLength": 36,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "userCode": {
+      "type": "string",
+      "mysql": {
+        "columnName": "userCode",
+        "dataType": "char",
+        "dataLength": 36,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "userName": {
+      "type": "string",
+       "mysql": {
+        "columnName": "userName",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "password": {
+      "type": "string",
+       "mysql": {
+        "columnName": "password",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "note": {
+      "type": "string",
+       "mysql": {
+        "columnName": "note",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "sex": {
+      "type": "string",
+       "mysql": {
+        "columnName": "sex",
+        "dataType": "int",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "age": {
+      "type": "string",
+       "mysql": {
+        "columnName": "age",
+        "dataType": "int",
+        "dataLength": 3,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "userType": {
+      "type": "number",
+       "mysql": {
+        "columnName": "userType",
+        "dataType": "int",
+        "dataLength": 11,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
